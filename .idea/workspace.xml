@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9817cc8-76cd-403c-9700-f3bf3bab7ada" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/css/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/images/profile-pic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/images/projects/opioid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/static/resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/templates/projects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/wsgi.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-server/nginx/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-server/nginx/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -103,7 +97,6 @@
       <list>
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/api-server/templates/home.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/api-server/flask-app/views.py" />
         <option value="$PROJECT_DIR$/api-server/flask-app/__init__.py" />
         <option value="$PROJECT_DIR$/api-server/Dockerfile" />
@@ -127,6 +120,7 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/flask-server/Dockerfile" />
         <option value="$PROJECT_DIR$/k8s/services.yaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -149,33 +143,6 @@
             <path>
               <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-web" type="462c0819:PsiDirectoryNode" />
-              <item name="flask-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-web" type="462c0819:PsiDirectoryNode" />
-              <item name="flask-server" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-web" type="462c0819:PsiDirectoryNode" />
-              <item name="flask-server" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-web" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-web" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx-server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,7 +198,7 @@
     <frame x="840" y="23" width="840" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -244,7 +211,7 @@
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31294116" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31294116" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32902467" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -253,7 +220,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.travis.yml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/api-server/templates/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -428,6 +394,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
