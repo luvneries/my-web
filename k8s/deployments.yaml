@@ -1,0 +1,52 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: flask-deployment
+  labels:
+    app: flask-server
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-server
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: flask-server
+        tier: backend
+    spec:
+      containers:
+        - name: flask-container
+          image: luvneries/api-server
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          env:
+            - name: REDIS_HOST
+              value: redis-server
+            - name: REDIS_PORT
+              value: '6379'
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-server
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: redis-server
+        tier: backend
+    spec:
+     containers:
+       - name: redis-container
+         image: redis
+         ports:
+           - containerPort: 6379

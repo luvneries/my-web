@@ -1,44 +1,46 @@
-version: '3.6'
+version: '3.7'
 services:
   nginx:
     container_name: nginx-container
     image: luvneries/web-server
     build:
-      context: ./web-server/nginx/
+      context: ./nginx-server/
       dockerfile: Dockerfile
     volumes:
-      - ./web-server/nginx/:/etc/nginx/conf.d/
+      - ./nginx-server/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx-server/index.html:/etc/nginx/html/index.html
     networks:
       - my-web-network
+    expose:
+      - 80
     ports:
       - 80:80
     depends_on:
       - flask-server
 
-  redis-server:
-    container_name: redis-container
-    image: redis
-    networks:
-      - my-web-network
-
   flask-server:
     container_name: flask-container
     image: luvneries/api-server
     build:
-      context: ./api-server/
+      context: ./flask-server/
       dockerfile: Dockerfile
     expose:
-      - 3000
+      - 5000
+    ports:
+      - 5000:5000
     volumes:
-      - ./api-server/:/app
+      - ./flask-server/:/app
     depends_on:
       - redis-server
     environment:
-#      - FLASK_APP=/app/main.py
       - REDIS_HOST=redis-server
       - REDIS_PORT=6379
-    #command: flask run --host=0.0.0.0
-    #command: gunicorn -w 4 --bind :3000 wsgi:app
+    networks:
+      - my-web-network
+
+  redis-server:
+    container_name: redis-container
+    image: redis
     networks:
       - my-web-network
 
