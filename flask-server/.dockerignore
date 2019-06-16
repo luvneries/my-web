@@ -1,3 +1,16 @@
+.git
+.ipynb_checkpoints
+notebooks
+unused
 Dockerfile
-__pycache__ls
+.DS_Store
+.gitignore
+README.md
+env.*
+devops
+__pycache__
+
+# To prevent storing dev/temporary container data
+*.csv
+tmp
 
