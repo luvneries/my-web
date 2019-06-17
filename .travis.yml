@@ -18,7 +18,7 @@ before_install:
   - gcloud config set compute/zone us-central1-a
   - gcloud container clusters get-credentials my-web-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t luvneries/api-server-test -f ./flask-server/Dockerfile ./flask-server
+
 
 deploy:
   provider: script
