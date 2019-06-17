@@ -1,9 +1,9 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: aimlcode-tls
+  name: letsencrypt-cert
 spec:
-  secretName: aimlcode-secret
+  secretName: letsencrypt-cert
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
@@ -18,4 +18,3 @@ spec:
         domains:
           - aimlcode.com
           - www.aimlcode.com
-
