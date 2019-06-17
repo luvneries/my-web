@@ -19,8 +19,7 @@ before_install:
   - gcloud container clusters get-credentials my-web-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t luvneries/api-server-test -f ./flask-server/Dockerfile ./flask-server
-script:
-  - docker run luvneries/api-server-test
+
 deploy:
   provider: script
   script: bash ./deploy.sh
