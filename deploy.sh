@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 docker build -t luvneries/api-server:latest -t luvneries/api-server:$SHA -f ./flask-server/Dockerfile ./flask-server
 docker push luvneries/api-server:latest
 docker push luvneries/api-server:$SHA
